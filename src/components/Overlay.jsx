@@ -17,6 +17,7 @@ export const Overlay = () => {
           <h1 className="logo">
             RAINER AHI
           </h1>
+          <h2 className="logo--h2" >Portfolio Website</h2>
           <p className="intro__scroll">Scroll to start exploring</p>
           <button
             className="explore"
@@ -24,7 +25,7 @@ export const Overlay = () => {
               setPlay(true);
             }}
           >
-            Explore
+            EXPLORE
           </button>
         </div>
       )}

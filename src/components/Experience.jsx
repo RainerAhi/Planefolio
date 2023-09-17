@@ -439,18 +439,8 @@ export const Experience = () => {
 
     tl.current.to(backgroundColors.current, {
       duration: 1,
-      colorA: "#6f35cc",
-      colorB: "#ffad30",
-    });
-    tl.current.to(backgroundColors.current, {
-      duration: 1,
-      colorA: "#424242",
-      colorB: "#ffcc00",
-    });
-    tl.current.to(backgroundColors.current, {
-      duration: 1,
-      colorA: "#81318b",
-      colorB: "#55ab8f",
+      colorA: "#FF5F6D",
+      colorB: "#FFC371",
     });
 
     tl.current.pause();
@@ -511,11 +501,10 @@ export const Experience = () => {
             />
           </group>
           <group ref={airplane}>
-            <Float floatIntensity={1} speed={1.5} rotationIntensity={0.5}>
+            <Float floatIntensity={2} speed={1.5} rotationIntensity={0.5}>
               <Airplane
-                rotation-y={Math.PI / 2}
-                scale={[0.2, 0.2, 0.2]}
-                position-y={0.1}
+                scale={0.0175}
+                position-y={-0.3}
               />
             </Float>
           </group>

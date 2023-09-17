@@ -10,9 +10,9 @@ export const TextSection = ({ title, subtitle, ...props }) => {
           anchorX={"left"}
           anchorY="bottom"
           fontSize={0.52}
-          maxWidth={2.5}
+          maxWidth={3}
           lineHeight={1}
-          font={"./fonts/DMSerifDisplay-Regular.ttf"}
+          font={"./fonts/DMSans-ExtraBold.ttf"}
         >
           {title}
           <meshStandardMaterial
@@ -28,7 +28,8 @@ export const TextSection = ({ title, subtitle, ...props }) => {
         anchorY="top"
         fontSize={0.2}
         maxWidth={3.5}
-        font={"./fonts/Inter-Regular.ttf"}
+        font={"./fonts/DMsans-Medium.ttf"}
+        textAlign="justify"
       >
         {subtitle}
         <meshStandardMaterial

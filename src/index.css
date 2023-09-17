@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter&display=swap");
 
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,600&display=swap');
+
+
 #root {
   width: 100vw;
   height: 100vh;
@@ -59,7 +63,7 @@ body {
 }
 
 .logo {
-  font-family: "DM Serif Display", serif;
+  font-family: "DM Sans", sans-serif;
   color: white;
   font-size: 8rem;
   letter-spacing: 0.5rem;
@@ -73,31 +77,19 @@ body {
 }
 
 .intro--disappear .logo {
-  top: 42px;
-  transform: scale(0.25);
-  transform-origin: center top;
+  animation: fadeOut 1s ease-in-out forwards;
 }
 
-.spinner {
-  position: absolute;
-  right: 0px;
-  top: 0px;
-  margin-right: -42px;
-  margin-top: -42px;
-  animation: fadeIn 2.4s ease-in-out 1.2s forwards;
-  opacity: 0;
+.logo--h2 {
+  font-family: "DM Sans", sans-serif;
+  color: white;
+  margin-top: 30vh;
+  font-size: 2rem;
+  animation: fadeUp 2.4s ease-in-out;
+  transition: all 2s ease-in-out;
 }
 
-.spinner__image {
-  width: 164px;
-  height: 164px;
-  background-size: contain;
-  background-image: url("/images/wawa.svg");
-  animation: rotate 10s linear infinite;
-}
-
-.intro--disappear .spinner {
-  opacity: 1;
+.intro--disappear .logo--h2 {
   animation: fadeOut 1s ease-in-out forwards;
 }
 
@@ -120,16 +112,17 @@ body {
 }
 
 .explore {
-  padding: 1rem 2rem;
+  padding: 1rem 4rem;
   border: none;
-  font-family: "DM Serif Display", serif;
+  font-family: "DM Sans", sans-serif;
   font-size: 1.25rem;
+  font-weight: bold;
   letter-spacing: 0.25rem;
-  color: #3535cc;
+  color: #FF5F6D;
   border-radius: 32px;
   cursor: pointer;
   display: inline-block;
-  margin-top: 320px;
+  margin-top: 50px;
   display: inline-block;
   position: relative;
   z-index: 1;
@@ -151,7 +144,7 @@ body {
 
 .explore:before {
   content: "";
-  background: #3535cc;
+  background: #FF5F6D;
   position: absolute;
   width: 0%;
   bottom: 0;
@@ -184,7 +177,7 @@ body {
 }
 
 .outro__text {
-  font-family: "Inter", sans-serif;
+  font-family: "DM Sans", sans-serif;
   font-size: 1.5rem;
   color: white;
   text-align: center;
@@ -247,11 +240,5 @@ body {
 
   100% {
     opacity: 0;
-  }
-}
-
-@keyframes rotate {
-  100% {
-    transform: rotate(360deg);
   }
 }
