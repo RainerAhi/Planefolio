@@ -26,10 +26,10 @@ function App() {
           pages={play && !end ? 20 : 0}
           damping={0.5}
           style={{
-            top: "10px",
+            top: "0px",
             left: "0px",
-            bottom: "10px",
-            right: "10px",
+            bottom: "0px",
+            right: "0px",
             width: "auto",
             height: "auto",
             animation: "fadeIn 2.4s ease-in-out 1.2s forwards",
