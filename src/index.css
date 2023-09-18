@@ -277,6 +277,18 @@ body {
 
   .outro__text {
     font-size: 1rem;
+    width: 100%;
+  }
+
+  .logo--outro {
+    font-size: 3rem;
+    letter-spacing: 0.25rem;
+    margin-top: -2rem;
+  }
+
+  .button--links {
+    font-size: 0.7rem;
+    padding: 5px;
   }
 }
 

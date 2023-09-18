@@ -54,9 +54,9 @@ export const Experience = () => {
         subtitle: `Hello, I'm Rainer, a 15-year-old developer from Estonia. I've had a passion for crafting creations, whether in the digital realm or the physical world, for a long time. Coding became my avenue of expression about a year ago, and I've been dedicated to it ever since. This website marks my first immersive venture - hope you like it!`,
       },
       {
-        cameraRailDist: 1.5,
+        cameraRailDist: 2,
         position: new Vector3(
-          curvePoints[2].x + 2,
+          curvePoints[2].x + 1,
           curvePoints[2].y + 1.25,
           curvePoints[2].z
         ),
@@ -74,9 +74,9 @@ export const Experience = () => {
         subtitle: `In 2022, I crafted an educational investment app for students. It secured third place in a national contest and earned a Ministry of Education award. With Studenx, students can learn investing through engaging content – from videos and memes to in-depth stock and cryptocurrency information. `,
       },
       {
-        cameraRailDist: 1.5,
+        cameraRailDist: 2,
         position: new Vector3(
-          curvePoints[4].x + 1.5,
+          curvePoints[4].x + 1,
           curvePoints[4].y + 1.25,
           curvePoints[4].z
         ),
