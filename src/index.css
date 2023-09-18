@@ -34,6 +34,7 @@ body {
   left: 0;
   bottom: 0;
   right: 0;
+  margin-top: -5%;
 }
 
 .overlay--disable {
@@ -97,10 +98,10 @@ body {
   opacity: 0;
   color: white;
   font-family: "Inter", sans-serif;
-  font-size: 1rem;
+  font-size: 1.5rem;
   letter-spacing: 0.05rem;
   position: absolute;
-  top: 24vh;
+  top: 50vh;
 }
 
 .intro--disappear .intro__scroll {
@@ -166,6 +167,7 @@ body {
   width: 100%;
   height: 100%;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   opacity: 0;
@@ -174,6 +176,16 @@ body {
 
 .outro--appear {
   opacity: 1;
+  pointer-events: all;
+  margin-top: 0;
+}
+
+.logo--outro {
+  font-family: "DM Sans", sans-serif;
+  color: white;
+  font-size: 8rem;
+  letter-spacing: 0.5rem;
+  margin-bottom: 0;
 }
 
 .outro__text {
@@ -182,6 +194,66 @@ body {
   color: white;
   text-align: center;
   width: 600px;
+}
+
+.button {
+  padding: 5px;
+}
+
+.button--links {
+  padding: 1rem 4rem;
+  border: none;
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.25rem;
+  font-weight: bold;
+  letter-spacing: 0.25rem;
+  color: #FF5F6D;
+  border-radius: 32px;
+  cursor: pointer;
+  display: inline-block;
+  margin-top: 50px;
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  transition: 0.42s ease-in-out;
+  animation: fadeIn 2.4s ease-in-out 2s forwards;
+  opacity: 0;
+}
+
+.button--links:hover {
+  color: white;
+}
+
+.button--links:hover:before {
+  width: 200%;
+  height: 300%;
+  border-radius: 100%;
+}
+
+.button--links:before {
+  content: "";
+  background: #FF5F6D;
+  position: absolute;
+  width: 0%;
+  bottom: 0;
+  left: 50%;
+  height: 0%;
+  transition: 0.42s ease-in-out;
+  z-index: -1;
+  transform: translateX(-50%) translateY(50%);
+}
+
+.html--button {
+  color: white;
+}
+
+.html--button:hover {
+  color: #FF5F6D;
+}
+
+.bottom--text {
+  margin-bottom: 0;
 }
 
 /* RESPONSIVE */

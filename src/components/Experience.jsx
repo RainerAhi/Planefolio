@@ -47,7 +47,7 @@ export const Experience = () => {
         cameraRailDist: -1,
         position: new Vector3(
           curvePoints[1].x + -4,
-          curvePoints[1].y,
+          curvePoints[1].y + 1.25,
           curvePoints[1].z
         ),
         title: "ABOUT ME",
@@ -57,17 +57,17 @@ export const Experience = () => {
         cameraRailDist: 1.5,
         position: new Vector3(
           curvePoints[2].x + 2,
-          curvePoints[2].y,
+          curvePoints[2].y + 1.25,
           curvePoints[2].z
         ),
         title: "SKILLS",
-        subtitle: `I excel in web development with proficiency in HTML, CSS, JavaScript, and Dart. I leverage THREE.js and React Three Fiber to create immersive websites. I also have expertise in Blender for 3D modeling and webpage design. Furthermore, I'm experienced in social media management, boosting online presence and engagement.`,
+        subtitle: `I excel in web development with proficiency in HTML, CSS, JavaScript and Dart with Flutter. I leverage a JavaScript library called THREE.js to create immersive 3D websites. I also have expertise in Blender for 3D modeling. Furthermore, I have significant expertise in social media management and growth, having successfully garnered 35 million views and 25 thousand subscribers on YouTube.`,
       },
       {
         cameraRailDist: -1,
         position: new Vector3(
           curvePoints[3].x - 4,
-          curvePoints[3].y,
+          curvePoints[3].y + 1.25,
           curvePoints[3].z
         ),
         title: "STUDENX",
@@ -77,7 +77,7 @@ export const Experience = () => {
         cameraRailDist: 1.5,
         position: new Vector3(
           curvePoints[4].x + 1.5,
-          curvePoints[4].y,
+          curvePoints[4].y + 1.25,
           curvePoints[4].z
         ),
         title: "ACHIEVEMENTS",
@@ -145,7 +145,7 @@ export const Experience = () => {
         position: new Vector3(
           curvePoints[1].x + 8,
           curvePoints[1].y - 14,
-          curvePoints[1].z - 22
+          curvePoints[1].z - 2
         ),
       },
       // SECOND POINT
@@ -262,8 +262,8 @@ export const Experience = () => {
 
   const shape = useMemo(() => {
     const shape = new THREE.Shape();
-    shape.moveTo(0, -0.08);
-    shape.lineTo(0, 0.08);
+    shape.moveTo(0, -0.15);
+    shape.lineTo(0, 0.15);
 
     return shape;
   }, [curve]);

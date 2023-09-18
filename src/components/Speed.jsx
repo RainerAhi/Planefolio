@@ -37,10 +37,6 @@ const SpeedShape = () => {
 
   return (
     <Instance
-      ref={ref}
-      color="white"
-      position={[randomPosition.x, randomPosition.y, randomPosition.z]}
-      rotation-y={Math.PI / 2}
     />
   );
 };

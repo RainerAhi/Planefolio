@@ -26,9 +26,9 @@ export const TextSection = ({ title, subtitle, ...props }) => {
         color="white"
         anchorX={"left"}
         anchorY="top"
-        fontSize={0.2}
+        fontSize={0.25}
         maxWidth={3.5}
-        font={"./fonts/DMsans-Medium.ttf"}
+        font={"./fonts/DMsans-Bold.ttf"}
         textAlign="justify"
       >
         {subtitle}
